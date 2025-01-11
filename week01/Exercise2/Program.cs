@@ -10,6 +10,23 @@ class Program
 
         string letter = "";
 
+        string siGn = "";
+
+        if (grade < 97 && grade >60)
+        {
+            int remainder = grade % 10;
+            if (remainder >= 7)
+            {
+                siGn= "+";
+
+            }
+            else if (remainder <3)
+            {
+                siGn="-";
+            }
+
+        }
+
         if (grade >= 90 )
         {
             letter= "A";
@@ -31,7 +48,8 @@ class Program
             letter= "F";
         }
 
-        Console.WriteLine($"Your grade is {letter}");
+
+        Console.WriteLine($"Your grade is {letter} {siGn}");
 
         if (grade >=70)
         {
