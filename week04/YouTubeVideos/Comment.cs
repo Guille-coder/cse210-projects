@@ -10,13 +10,11 @@ public class Comment
         _nameOfPerson = name;
         _textOfComment = text;
     }
-    public string names()
+    
+    public void display()
     {
-        return _nameOfPerson;
-    }
-    public string text()
-    {
-        return _textOfComment;
+        Console.WriteLine($"{_nameOfPerson}: {_textOfComment}");
+
     }
 
 

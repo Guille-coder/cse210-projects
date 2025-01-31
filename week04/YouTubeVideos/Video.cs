@@ -39,7 +39,7 @@ public class Video
         Console.WriteLine($"Comment Count: {Count()}");
         foreach (Comment comment in _coments)
         {
-            Console.WriteLine($"{comment.names()}: {comment.text()}");
+            comment.display();
         }
         Console.WriteLine("\n");
     }
